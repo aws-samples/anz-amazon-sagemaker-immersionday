@@ -1,7 +1,9 @@
 ## ANZ-Amazon-SageMaker-ImmersionDay-workshop
 
 Welcome to Machine learning with amazon sagemaker workshop
+
 This workshops help customers and partners to learn about the fundamentals of machine learning on amazon SageMaker.
+
 In this hands-on session, we'll introduce Amazon SageMaker with a focus on the core workflow of data processing, building, training and deploying models cost-effectively. Attendees will learn how to map traditional, notebook-based or local ways of working to SageMaker patterns - and explore some of the initial lineage tracking and infrastructure optimization benefits that SageMaker's architecture delivers.
 
 **Who should attend:**
