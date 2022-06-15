@@ -12,7 +12,7 @@ Data scientists, Analysts, ML engineer, Data Engineers and Developers who would 
 Overview of the Labs
 
 
-**Hands-On: **
+**Hands-On:**
 
 Access to temporary AWS accounts will be provided for you on the day: No existing account required. For the best experience you may want to use a large screen or second screen if possible, to follow the workshop and hands-on side-by-side.
 
