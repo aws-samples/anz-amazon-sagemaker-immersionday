@@ -4,26 +4,27 @@ Welcome to Machine learning with amazon sagemaker workshop
 This workshops help customers and partners to learn about the fundamentals of machine learning on amazon SageMaker.
 In this hands-on session, we'll introduce Amazon SageMaker with a focus on the core workflow of data processing, building, training and deploying models cost-effectively. Attendees will learn how to map traditional, notebook-based or local ways of working to SageMaker patterns - and explore some of the initial lineage tracking and infrastructure optimization benefits that SageMaker's architecture delivers.
 
-Who should attend:
+**Who should attend:**
 
 Data scientists, Analysts, ML engineer, Data Engineers and Developers who would like to learn about Machine Learning on Amazon SageMaker.
 Overview of the Labs
 
-Pre-requisites:
 
-Hands-On: 
+**Hands-On: **
+
 Access to temporary AWS accounts will be provided for you on the day: No existing account required. For the best experience you may want to use a large screen or second screen if possible, to follow the workshop and hands-on side-by-side.
 
-Prior Knowledge: 
+**Prior Knowledge:** 
 Python is used as the programming language for all the labs and participants are assumed to have familiarity with Python.
 
+**Content of this workshop:**
 
-Content of this workshop:
-F1- SageMaker Studio Notebooks & Feature Engineering : learn about SageMaker notebooks and data explorations on Sagemaker
+F1- Lab1) SageMaker Studio Notebooks & Feature Engineering : learn about SageMaker notebooks and data explorations on Sagemaker
+Lab 2)Train, Tune and Deploy model using SageMaker Built-in Algorithms: build, train and deploy a model
 
-F2- Train, Tune and Deploy model using SageMaker Built-in Algorithms: build, train and deploy a model
+F2- SageMaker AutoPilot: use SageMaker Autopilot to build and deploy a model
 
-F3- SageMaker AutoPilot: use SageMaker Autopilot to build and deploy a model
+F3- Bring your own training script  to train and deploy on SageMaker
 
 Challenge Keras: this is challenge where you migrate a SKLearn model built in a local notebook and using Iris data into SageaMaker
 
