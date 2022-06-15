@@ -22,6 +22,7 @@ Python is used as the programming language for all the labs and participants are
 **Content of this workshop:**
 
 F1- Lab1) SageMaker Studio Notebooks & Feature Engineering : learn about SageMaker notebooks and data explorations on Sagemaker
+
 Lab 2)Train, Tune and Deploy model using SageMaker Built-in Algorithms: build, train and deploy a model
 
 F2- SageMaker AutoPilot: use SageMaker Autopilot to build and deploy a model
