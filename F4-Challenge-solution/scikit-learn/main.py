@@ -7,7 +7,7 @@ import numpy as np
 import os
 import pandas as pd
 from sklearn.externals import joblib
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
@@ -28,8 +28,16 @@ label_decode = {
 
 
 if __name__ =='__main__':
+    #------------------------------- parsing input parameters (from command line)
+    print('extracting arguments')
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output-data-dir', type=str, default=os.environ.get('SM_OUTPUT_DATA_DIR'))
+       
+   #TODO: RandomForest hyperparameters
+    parser.add_argument('--n_estimators', type=int, default=10)
+    parser.add_argument('--min_samples_leaf', type=int, default=3)
+    
+    
+   # TODO: Data, model, and output directories
     parser.add_argument('--model-dir', type=str, default=os.environ.get('SM_MODEL_DIR'))
     parser.add_argument('--train', type=str, default=os.environ.get('SM_CHANNEL_TRAIN'))
     parser.add_argument('--test', type=str, default=os.environ.get('SM_CHANNEL_TEST'))
@@ -40,16 +48,18 @@ if __name__ =='__main__':
     y_train= train['label'].map(label_encode)
     X_train =  train.drop(["label"], axis=1)
     
+    
     test = pd.read_csv(os.path.join(args.test,'test.csv'),index_col=0, engine="python")
     y_test= test['label'].map(label_encode)
     X_test =  test.drop(["label"], axis=1)
    
-    sc = StandardScaler()
-    X_train = sc.fit_transform(X_train)
-    X_test = sc.fit_transform(X_test)
+        
+    #train the randomforest regression model
+    model= RandomForestClassifier(
+        n_estimators=args.n_estimators,
+        min_samples_leaf=args.min_samples_leaf)
     
-    #train the logistic regression model
-    model = LogisticRegression().fit(X_train, y_train, eval_set=(X_test, y_test), logging_level='Silent')
+    model.fit(X_train, y_train)
 
     #Save the model to the location specified by args.model_dir
     joblib.dump(model, os.path.join(args.model_dir, "model.joblib"))
