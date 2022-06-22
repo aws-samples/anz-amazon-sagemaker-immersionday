@@ -8,6 +8,8 @@ from sklearn.externals import joblib
 #TODO add your other required libraries
 
 #functions used in your code
+
+
 # -TODO-Dictionary to encode labels to codes
 
 
@@ -30,9 +32,11 @@ if __name__ =='__main__':
     args = parser.parse_args()
     
 
-   
-    #TODO-Load your data from container filesystem into training / test data sets? and do the data processing such as standardisation 
+    #TODO-Load your data (both training and test) from container filesystem into training / test data sets and split them to train/test features and lables
     
+    
+    
+    #TODO- standardise the features before fitting them into our model( both for test and train features)  
     
     
     #TODO- train the logistic regression model
@@ -45,15 +49,6 @@ if __name__ =='__main__':
     
     
 #define a function that loads the model    
-
-
-
-#define a function that takes the input data and changes it to the right format to be consumed by the model endpoint
-
-
-
-# define a predict function that takes the model and input data and provide preidctions
-
 
 
 
