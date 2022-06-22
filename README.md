@@ -29,9 +29,8 @@ F2- SageMaker AutoPilot: use SageMaker Autopilot to build and deploy a model
 
 F3- Bring your own training script  to train and deploy on SageMaker
 
-Challenge Keras: this is challenge where you migrate a SKLearn model built in a local notebook and using Iris data into SageaMaker
+Challenge Sklearn: this is challenge where you migrate a SKLearn model built in a local notebook and using Iris data into SageaMaker
 
-Challenge SKlearn: this is challenge where you migrate a Tensorflow- Keras local notebook and using minst image data into SageaMaker
 
 ## Security
 
