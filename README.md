@@ -1,14 +1,14 @@
 ## ANZ-Amazon-SageMaker-ImmersionDay-workshop
 
-Welcome to Machine learning with amazon sagemaker workshop
+Welcome to Machine learning  and generative AI on Amazon Sagemaker workshop
 
-This workshops help customers and partners to learn about the fundamentals of machine learning on amazon SageMaker.
+This workshops helps individuals customers and partners to learn about the fundamentals of machine learning and generative AI on Amazon SageMaker.
 
-In this hands-on session, we'll introduce Amazon SageMaker with a focus on the core workflow of data processing, building, training and deploying models cost-effectively. Attendees will learn how to map traditional, notebook-based or local ways of working to SageMaker patterns - and explore some of the initial lineage tracking and infrastructure optimization benefits that SageMaker's architecture delivers.
+In this workshop, we’ll explore Amazon SageMaker robust tooling for core machine learning tasks such as data preparation, model building, training and deployment. We will also get hands on with Amazon SageMaker no-code/low-code generative AI interfaces as well as the fully managed generative AI AWS service Amazon Bedrock that allow anyone to easily integrate AI into their applications. The focus is on enabling hands-on experience with the platform through practical examples and coding tutorials for developers and data scientists of all levels.
 
 **Who should attend:**
 
-Data scientists, Analysts, ML engineer, Data Engineers and Developers who would like to learn about Machine Learning on Amazon SageMaker.
+Data scientists, Analysts, ML engineer, Data Engineers and Developers who would like to learn about Machine Learning and gererative AI on Amazon SageMaker.
 Overview of the Labs
 
 
@@ -21,9 +21,12 @@ Python is used as the programming language for all the labs and participants are
 
 **Content of this workshop:**
 
-F1- Lab1) SageMaker Studio Notebooks & Feature Engineering : learn about SageMaker notebooks and data explorations on Sagemaker
-
-Lab 2)Train, Tune and Deploy model using SageMaker Built-in Algorithms: build, train and deploy a model
+F1 Notebook:
+   Lab1) SageMaker Studio Notebooks & Feature Engineering : learn about SageMaker notebooks and data explorations on Sagemaker
+   
+  Lab 2)Train, Tune and Deploy model using SageMaker Built-in Algorithms: build, train and deploy a model
+  
+  Lab3) Deploy one of the 10 000+ Hugging Face Transformers to Amazon SageMaker for Inference
 
 F2- SageMaker AutoPilot: use SageMaker Autopilot to build and deploy a model
 
